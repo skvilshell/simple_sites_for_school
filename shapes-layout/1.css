@@ -1,0 +1,48 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.block {
+   --shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    height: 100vh;
+   color: white;
+   padding-top: 30vh;
+   padding-left: 15vw;
+   position: relative;
+}
+
+.bg {
+   position: absolute;
+   background:
+   url("https://img.desktopwallpapers.ru/rocks/pics/wide/1920x1200/17fe4e0842196b09c8de6c88f9c5ca62.jpg") #444;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   filter: saturate(50%) brightness(60%);
+   -webkit-filter: saturate(50%) brightness(60%);
+}
+
+.title {
+   display: inline-block;
+   font-size: 4vw;
+   text-transform: uppercase;
+   letter-spacing: 1vw;
+   padding-bottom: 1.5vw;
+   text-shadow: var(--shadow);
+   position: relative;
+}
+
+.title::after {
+   content: '';
+   position: absolute;
+   bottom: -1.5vw;
+   left: 0;
+   box-shadow: var(--shadow);
+   right: -4px;
+   display: block;
+   height: 0.4vw;
+   background-color: #fff;
+}

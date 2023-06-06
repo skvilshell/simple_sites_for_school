@@ -1,0 +1,61 @@
+.btn-primary {
+   @include fz14-500;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background: $mainColor;
+   padding: 21px 0;
+   border: none;
+   transition: background ease .3s;
+   width: 300px;
+   user-select: none;
+
+   &:hover {
+      background: $grey;
+      transition: background ease .3s;
+   }
+
+   &:focus {
+      background: $grey;
+      transition: background ease .3s;
+   }
+
+   &:active {
+      background: black;
+      transition: background ease .2s;
+   }
+
+}
+
+.btn-outline {
+   @include fz14-500;
+   text-align: center;
+   text-transform: uppercase;
+   color: $mainColor;
+   background: transparent;
+   padding: 21px 0;
+   border: none;
+   transition: background ease .3s;
+   width: 300px;
+   border: 1px solid $mainColor;
+   user-select: none;
+
+   &:hover {
+      background: $mainColor;
+      color: white;  
+      transition: all ease .3s;
+   }
+
+   &:focus {
+      background: $mainColor;
+      color: white;
+      transition: all ease .3s;
+   }
+
+   &:active {
+      background: black;
+      color: white;
+      transition: all ease .2s;
+   }
+
+}

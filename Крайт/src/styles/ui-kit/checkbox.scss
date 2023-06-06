@@ -1,0 +1,28 @@
+input[type=checkbox] {
+   width: 1px;
+   height: 1px;
+   opacity: 0;
+   position: absolute;
+}
+
+label.checkbox {
+   @include fz14-400;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: 50px;
+   height: 32px;
+   color: $mainColor;
+   border: 1px solid $grey300;
+   transition: all ease 0.3s;
+
+   input[type=checkbox]:hover+& {
+      border: 1px solid $mainColor;
+   }
+
+   input[type=checkbox]:checked+& {
+      background: $mainColor;
+      color: white;
+   }
+}
